@@ -1,0 +1,23 @@
+{
+  "name": "promising-web-scraper",
+  "version": "1.0.0",
+  "description": "An exercise in the course 1DV023",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marrieto/Promising-Web-Scraper.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Martin Lindahl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marrieto/Promising-Web-Scraper/issues"
+  },
+  "homepage": "https://github.com/Marrieto/Promising-Web-Scraper#readme"
+}
