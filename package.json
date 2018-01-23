@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Marrieto/Promising-Web-Scraper#readme",
   "dependencies": {
-    "node-fetch": "^1.7.3",
+    "axios": "^0.17.1",
     "request": "^2.83.0"
   }
 }

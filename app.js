@@ -1,13 +1,13 @@
 'use strict'
 const getArgs = require('./js/getArgs')
-const nodeFetch = require('node-fetch')
-// const getPage = require('./js/getPage')
+const getPage = require('./js/getPage')
 
-let args = getArgs.getArgs()
+// let args = getArgs.getArgs()
+let args = 'http://www.dn.se/'
 console.log(args)
 
-nodeFetch(args[0]).then((response) => {
-  console.log(response)
-}).catch((error) => {
-  console.log(error)
+let temp = getPage.fetch(args).then((response) => {
+  console.log(response.data)
+}).catch((err) => {
+  console.log(`Error: ${err}`)
 })

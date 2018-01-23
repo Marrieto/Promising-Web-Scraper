@@ -1,29 +1,12 @@
-const requestURL = require('request')
+const requestURL = require('axios')
 
-let fetch = function (url) {
-  return new Promise((resolve, reject) => {
-    requestURL.get(url, (error, response, body) => {
-      console.log(`Requested url: ${url}`)
-      if (error) {
-        reject(error)
-      }
-      // if (response !== 200) {
-      //   reject('Bad response')
-      // }
-      resolve('All good')
-    })
-  })
+let fetch = async function (url) {
+  let temp = await requestURL(url)
+  // temp = await temp.json()
+  // temp = await JSON.parse(temp)
+  // console.log(`${temp}`)
+  // console.log(temp.url)
+  return temp
 }
-
-// let fetch = function (url) {
-//   return new Promise((resolve, reject) => {
-//     request.get(url, (error, response, html) => {
-//       if (error || response !== 200) {
-//         return reject(`${error} + ${response}`)
-//       }
-//       return resolve(html)
-//     })
-//   })
-// }
 
 module.exports.fetch = fetch
