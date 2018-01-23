@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Marrieto/Promising-Web-Scraper/issues"
   },
-  "homepage": "https://github.com/Marrieto/Promising-Web-Scraper#readme"
+  "homepage": "https://github.com/Marrieto/Promising-Web-Scraper#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
 }
